@@ -2,14 +2,6 @@ public class Protagonist extends Character {
 
     public String name;
 
-    public Protagonist(String moniker) {
-	name = moniker;
-	setHP(125);
-	setStrength(100);
-	setDefense(40);
-	setAttack(0.4);
-    }
-
     public String getName() {
     return name;
     }
