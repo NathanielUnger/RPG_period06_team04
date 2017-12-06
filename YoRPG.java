@@ -72,15 +72,6 @@ public class YoRPG
     s += "Selection: ";
     System.out.print( s );
 
-	try {
-		int i = Integer.parseInt( in.readLine() );
-
-	if (i==1) {pat = Sumo; }
-    if (i==2) {pat = Ninja; }
-    if (i==3) {pat = SwordFighter; }
-	}
-    	catch ( IOException e ) { }
-
     s = "Intrepid protagonist, what doth thy call thyself? (State your name): ";
     System.out.print( s );
 
@@ -88,8 +79,17 @@ public class YoRPG
 	    name = in.readLine();
     } catch ( IOException e ) { }
 
+    try {
+    int i = Integer.parseInt( in.readLine() );
+
+    if (i==1) {pat = new Sumo(name); }
+    if (i==2) {pat = new Ninja(name); }
+    if (i==3) {pat = new SwordFighter(name); }
+  }
+      catch ( IOException e ) { }
+
     //instantiate the player's character
-    pat = new Protagonist( name );
+    // pat = new Protagonist( name );
 
   }//end newGame()
 
