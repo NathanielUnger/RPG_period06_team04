@@ -5,6 +5,14 @@ public class Character {
     private int defense;
     private double attack;
 
+    public String toString() {
+    return
+        "HP: " + getHP() + System.lineSeparator() +
+        "Strength: " + getStrength() + System.lineSeparator() +
+        "Defense: " + getDefense() + System.lineSeparator() +
+        "Attack rating: " + getAttack();
+    }
+
     public boolean isAlive() {
 	return hp>=0;
     }
@@ -35,6 +43,10 @@ public class Character {
 
     public int getHP() {
         return hp;
+    }
+
+    public int getStrength() {
+        return strength;
     }
 
     public void lowerHP(int ouch) {

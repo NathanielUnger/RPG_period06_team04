@@ -7,4 +7,10 @@ public class Sumo extends Protagonist {
 	setDefense(75);
 	setAttack(0.2);
     }
+
+    public String toString() {
+    	return
+    	super.toString() + System.lineSeparator()
+    	+ "Class: Sumo wrestler";
+    }
 }

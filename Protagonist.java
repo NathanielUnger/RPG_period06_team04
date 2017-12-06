@@ -2,6 +2,11 @@ public class Protagonist extends Character {
 
     public String name;
 
+    public String toString() {
+        return "Name: " + getName() + System.lineSeparator()
+        + super.toString();
+    }
+
     public String getName() {
     return name;
     }

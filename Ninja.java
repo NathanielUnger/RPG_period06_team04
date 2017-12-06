@@ -7,4 +7,10 @@ public class Ninja extends Protagonist {
 	setDefense(20);
 	setAttack(0.6);
     }
+
+    public String toString() {
+    	return
+    	super.toString() + System.lineSeparator()
+    	+ "Class: Ninja";
+    }
 }

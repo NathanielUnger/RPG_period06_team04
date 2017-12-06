@@ -7,5 +7,11 @@ public class SwordFighter extends Protagonist{
 	setDefense(40);
 	setAttack(0.4);
     }
+
+    public String toString() {
+    	return
+    	super.toString() + System.lineSeparator()
+    	+ "Class: Swordfighter";
+    }
 }
 	
