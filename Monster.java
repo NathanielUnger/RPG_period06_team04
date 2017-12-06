@@ -1,13 +1,6 @@
 public class Monster extends Character {
 
 
-    public Monster() {
-	setHP(125);
-	setStrength((int) Math.random()*45 + 50);
-	setDefense((int)  Math.random()*10 + 15);
-	setAttack(1);
-    }
-
  //    public boolean isAlive() {
 	// return hp>=0;
  //    }
