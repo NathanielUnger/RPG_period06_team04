@@ -17,6 +17,7 @@ public class YoRPG
 
   //each round, a Protagonist and a Monster will be instantiated...
   private Protagonist pat;   //Is it man or woman?
+    private int classChoice;
   private Monster smaug; //Friendly generic monster name?
 
   private int moveCount;
@@ -72,21 +73,21 @@ public class YoRPG
     s += "Selection: ";
     System.out.print( s );
 
+    try {
+      classChoice = Integer.parseInt( in.readLine() );
+    } catch ( IOException e ) { }
+
     s = "Intrepid protagonist, what doth thy call thyself? (State your name): ";
     System.out.print( s );
 
     try {
-	    name = in.readLine();
+      name = in.readLine();
     } catch ( IOException e ) { }
 
-    try {
-    int i = Integer.parseInt( in.readLine() );
-
-    if (i==1) {pat = new Sumo(name); }
-    if (i==2) {pat = new Ninja(name); }
-    if (i==3) {pat = new SwordFighter(name); }
-  }
-      catch ( IOException e ) { }
+    if (classChoice==1) {pat = new Sumo(name); }
+    if (classChoice==2) {pat = new Ninja(name); }
+    if (classChoice==3) {pat = new SwordFighter(name); }
+  
 
     //instantiate the player's character
     // pat = new Protagonist( name );
