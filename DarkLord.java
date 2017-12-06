@@ -5,4 +5,9 @@ public class DarkLord extends Monster {
 	setDefense((int) Math.random()*10 + 25);
 	setAttack(0.6);
     }
+
+    public String toString() {
+    	return super.toString() + System.lineSeparator() +
+    	"Class: Dark Lord";
+    }
 }

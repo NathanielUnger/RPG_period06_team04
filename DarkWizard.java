@@ -5,4 +5,9 @@ public class DarkWizard extends Monster {
 	setDefense((int) Math.random()*10 + 5);
 	setAttack(1);
     }
+
+    public String toString() {
+    	return super.toString() + System.lineSeparator() +
+    	"Class: Dark Wizard";
+    }
 }

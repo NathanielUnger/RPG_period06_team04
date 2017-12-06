@@ -5,4 +5,9 @@ public class Stormtrooper extends Monster {
 	setDefense((int)  Math.random()*10 + 15);
 	setAttack(.8);
     }
+
+    public String toString() {
+    	return super.toString() + System.lineSeparator() +
+    	"Class: Stormtrooper";
+    }
 }
