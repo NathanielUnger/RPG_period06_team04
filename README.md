@@ -1,5 +1,6 @@
 # RPG_period06_team04
 Here is our current version of Mr. Brown's Java-based RPG.
+
 As of now, our three Protagonist classes are:
 <ul>
 	<li>Sumo Wrestler: very defensive but less offensive</li>
