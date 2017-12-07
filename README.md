@@ -1,11 +1,15 @@
 # RPG_period06_team04
 Here is our current version of Mr. Brown's Java-based RPG.
 As of now, our three Protagonist classes are:
-	Sumo Wrestler: very defensive but less offensive
-	Ninja: very offensive but less defensive
-	Swordfighter: well-balanced all-around
+<ul>
+	<li>Sumo Wrestler: very defensive but less offensive</li>
+	<li>Ninja: very offensive but less defensive</li>
+	<li>Swordfighter: well-balanced all-around</li>
+</ul>
 
 As of now, our three Monster classes are:
-	Dark Lord: very high HP but low attack
-	Stormtrooper: the middling monster
-	Dark Wizard: very low HP but an all-out glass cannon
+<ul>
+	<li>Dark Lord: very high HP but low attack</li>
+	<li>Stormtrooper: the middling monster</li>
+	<li>Dark Wizard: very low HP but an all-out glass cannon</li>
+</ul>
